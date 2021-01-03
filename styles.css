@@ -1,0 +1,504 @@
+body {
+    font-family: 'Oxygen', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Delius Swash Caps', cursive;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+.landing,
+.projects,
+.about {
+    padding: 5% 0;
+    z-index: 10!important;
+}
+
+.navigation {
+    z-index: 11!important;
+    width: 100%;
+    height: 10rem;
+    position: fixed;
+    top: 0;
+    padding: 1.7%;
+}
+
+.navigation nav {
+    text-align: center;
+}
+
+.navigation ul {
+    margin-top: 1rem;
+}
+
+.navigation li {
+    list-style: none;
+    display: inline;
+    margin-right: 15px;
+}
+
+.navigation span {
+    font-family: 'Delius Swash Caps', cursive;
+    font-size: 1.5em;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.navigation img {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 101%;
+    height: 100%;
+}
+
+.navigation .row {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.landing {
+    background-color: #88AAB7;
+    height: 50rem;
+    text-align: center;
+    margin-top: 5rem;
+    padding: 18% 0% 5%;
+}
+
+.landing h1,
+.landing h2 {
+    color: white;
+    font-size: 0em;
+    animation: increaseSize 2s;
+}
+
+.landing h2 {
+    font-family: 'Oxygen', sans-serif;
+}
+
+.landing span {
+    color: #C27777;
+}
+
+.landing img {
+    width: 100%;
+    height: 4rem;
+}
+
+.projects {
+    background-color: #D2DFDF;
+}
+
+.projects .title,
+.about .title {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.projects .title img {
+    width: 30%;
+    height: 2rem;
+}
+
+.projects h2 {
+    color: #88AAB7;
+}
+
+.projects img {
+    height: -webkit-fill-available;
+    border-radius: 25px;
+}
+
+.projects a {
+    color: #D2DFDF;
+    text-decoration: none;
+}
+
+.skills {
+    margin-left: 1%;
+}
+
+.skills .row .col-9 {
+    background-color: white;
+    height: 25px;
+    display: block;
+    padding: 0;
+    border-radius: 25px;
+}
+
+.skills .row .col-9 span {
+    background-image: linear-gradient(to bottom right, #C27777, #D2DFDF);
+    height: 25px;
+    float: left;
+    display: block;
+    border-radius: 25px;
+}
+
+.skills .row .col-9,
+.skills .row .col-3 {
+    margin-top: 15px;
+}
+
+.html {
+    width: 80%;
+    animation: html 2s;
+}
+
+.css {
+    width: 75%;
+    animation: css 2s;
+}
+
+.js {
+    width: 70%;
+    animation: js 2s;
+}
+
+.jquery {
+    width: 70%;
+    animation: jquery 2s;
+}
+
+.bootstrap {
+    width: 75%;
+    animation: bootstrap 2s;
+}
+
+.ux {
+    width: 85%;
+    animation: ux 2s;
+}
+
+.jquery, .js, .css, .html, .bootstrap, .ux {
+    animation-play-state: paused;    
+}
+
+.about {
+    color: white;
+    height: 55rem;
+    background-color: #88AAB7;
+}
+
+.about svg {
+    width: 100%;
+}
+
+.about img {
+    border-radius: 25px;
+}
+
+.about .personal-pic img {
+    width: 60%;
+    float: right;
+}
+
+.about .top-about {
+    text-align: center;
+    margin: 0 auto 2rem;
+    font-size: 0.8em;
+}
+
+.about .top-about img {
+    width: 65px;
+    border-radius: 0;
+    margin-bottom: 0.5rem;
+    filter: invert(1);
+}
+
+.cards {
+    margin: 0 auto 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+  }
+
+.card {
+    height: 15rem;
+    border-radius: 25px;
+}
+
+.span-top {
+  opacity: 0;
+  transition: .5s ease;
+  padding: 10%;
+  background-color: #C27777;
+  border-radius: 25px;
+}
+
+.card:hover .span-top {
+    opacity: 1;
+}
+
+.placeholder {
+    min-height: 30rem;
+}
+
+#all {
+    position: relative;
+    z-index: 10!important;
+}
+
+.contact {
+    width: 100%;
+    z-index: 1!important;
+    color: white;
+    position: fixed;
+    display: block;
+    padding: 4% 0% 2%;
+    min-height: 30rem;
+    bottom: 0;
+    background-color: #C27777;
+}
+
+.contact h2 {
+    color: #D2DFDF;
+    text-align: center;
+}
+
+.links {
+    width: 50%;
+    text-align: center;
+    margin: 15px auto 0px;
+}
+
+.contact img {
+    width: 10rem;
+}
+
+.top-contact a,
+.links a {
+    color: #D2DFDF;
+    text-decoration: none;
+}
+
+.links img {
+    width: 3.5rem;
+    filter: opacity(0.8);
+}
+.links img:hover {
+    filter: opacity(1);
+}
+
+.side-p {
+    font-size: 10px;
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+
+.top-contact {
+    position: relative;
+    text-align: center;
+    padding: 0% 15%;
+    margin: 2% 0% 4%;
+}
+
+.top-contact p {
+    font-size: 1.3em;
+}
+
+.blockquote p {
+    font-family: 'Delius Swash Caps', cursive;
+    font-size: 1em;
+}
+
+.blockquote-footer {
+    margin-top: 0;
+    color: #D2DFDF;
+}
+
+.book-quote {
+    display: none;
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 2rem;
+}
+
+@-webkit-keyframes html{
+    from { width:0%; }
+    to   { width:80%; }
+}
+@keyframes html{
+    from { width:0%; }
+    to   { width:80%; }
+}
+
+@-webkit-keyframes css{
+    from { width:0%; }
+    to   { width:75%; }
+}
+@keyframes css{
+    from { width:0%; }
+    to   { width:75%; }
+}
+
+@-webkit-keyframes js{
+    from { width:0%; }
+    to   { width:70%; }
+}
+@keyframes js{
+    from { width:0%; }
+    to   { width:70%; }
+}
+
+@-webkit-keyframes jquery{
+    from { width:0%; }
+    to   { width:70%; }
+}
+@keyframes jquery{
+    from { width:0%; }
+    to   { width:70%; }
+}
+
+@-webkit-keyframes bootstrap{
+    from { width:0%; }
+    to   { width:75%; }
+}
+@keyframes bootstrap{
+    from { width:0%; }
+    to   { width:75%; }
+}
+
+@-webkit-keyframes ux{
+    from { width:0%; }
+    to   { width:85%; }
+}
+@keyframes ux{
+    from { width:0%; }
+    to   { width:85%; }
+}
+
+@media only screen and (max-width: 1000px) {
+    .about {
+        height: 62rem;
+    }
+
+    .about .personal-pic img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .landing,
+    .projects,
+    .about {
+        padding: 7% 1%;
+    }
+    
+    .navigation a,
+    .navigation span {
+        top: 5%;
+    }
+
+    .navigation a {
+        top: 70%;
+    }
+
+    .navigation .row {
+        width: 100%;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+
+    .projects .title,
+    .about .title {
+    margin-bottom: 5%;
+    }
+
+    .landing {
+        height: 26rem;
+        padding-top: 45%;
+        margin-top: 3rem;
+    }
+    
+
+    .landing img {
+        width: 100%;
+        height: 1.5rem;
+    }
+
+    .projects .title img,
+    .about .title img {
+        width: 70%;
+        height: 1.2rem;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+      }
+
+    .card {
+        height: 10rem;
+    }
+
+    .about {
+        height: 88rem;
+    }
+
+    .personal-pic {
+        margin-top: 2%;
+    }
+
+    .skills {
+        margin-left: 0%;
+        margin-top: 5%;
+    }
+
+    .skills .row .col-9 {
+        width: 65%;
+        margin-left: 5%;
+    }
+
+    .about .personal-pic img {
+        width: 100%;
+    }
+
+    .top-about {
+        margin: 0rem auto;
+    }
+
+    .left-icon {
+        padding-left: 0%;
+    }
+
+    .top-contact {
+        padding: 0%;
+    }
+
+    .placeholder {
+        min-height: 35rem;
+    }
+
+    .contact {
+        padding-top: 15%;
+        min-height: 35rem;
+    }
+
+    .contact p {
+        padding: 0% 6%;
+    }
+
+    .links {
+        width: 100%;
+        margin: 10px auto 35px;
+    }
+
+    .side-p {
+        margin: 0rem 0 1rem;
+    }
+  }
